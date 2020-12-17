@@ -48,3 +48,9 @@ img {
   margin: 0%;
   padding: -1%;
 }
+
+.navigation-control {
+  position: absolute;
+  text-align: left;
+  margin: auto;
+}

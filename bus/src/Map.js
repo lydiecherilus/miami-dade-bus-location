@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+import ReactMapGL, { Marker, Popup, NavigationControl } from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 import useSwr from 'swr';
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css';
@@ -103,6 +103,11 @@ function Map() {
                     placeholder='enter your address'
                     position='top-right'
                 />
+
+                {/* add navigation control */}
+                <div className='navigation-control'>
+                    <NavigationControl />
+                </div>
 
             </ReactMapGL>
         </div>
