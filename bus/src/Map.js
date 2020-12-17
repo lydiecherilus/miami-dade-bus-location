@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+import Geocoder from 'react-map-gl-geocoder';
 import useSwr from 'swr';
+import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import './App.css'
 
 
@@ -34,6 +36,18 @@ function Map() {
     const mapRef = useRef();
     const handleViewportChange = useCallback(
         (newViewport) => setViewport(newViewport),
+        []
+    );
+
+    /** initialize geocoder */
+    const handleGeocoderViewportChange = useCallback(
+        (newViewport) => {
+            const geocoderDefaultOverrides = { transitionDuration: 800 };
+            return handleViewportChange({
+                ...newViewport,
+                ...geocoderDefaultOverrides
+            });
+        },
         []
     );
 
@@ -78,6 +92,17 @@ function Map() {
                         </div>
                     </Popup>
                 ) : null}
+
+                {/* add geocoder */}
+                <Geocoder
+                    mapRef={mapRef}
+                    mapboxApiAccessToken={ReactMapGL.accessToken}
+                    onViewportChange={handleGeocoderViewportChange}
+                    zoom={12}
+                    trackProximity='true'
+                    placeholder='enter your address'
+                    position='top-right'
+                />
 
             </ReactMapGL>
         </div>
