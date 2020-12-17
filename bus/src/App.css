@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -14,3 +13,8 @@
   color: white;
 }
 
+img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
