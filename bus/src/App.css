@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(234, 234, 241);
 }
 
 .App-header {
@@ -9,12 +10,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 24px;
+  color: rgb(20, 20, 228);
+}
+
+h1 {
+  color: rgb(24, 86, 179);
+}
+
+h1:hover {
+  color: rgb(30, 61, 107);
 }
 
 img {
   cursor: pointer;
   width: 20px;
   height: 20px;
+}
+
+.popup {
+  width: 150px;
+  padding: 0;
+}
+
+.popup h5 {
+  display:block;
+  text-align: center;
+  color:hsl(121, 93%, 27%);
+  font-size: 12px;
+  margin: 0;
+  padding: -1%;
+ 
+}
+.popup p {
+  display: block;
+  font-size: 10px;
+  margin: 0%;
+  padding: -1%;
 }

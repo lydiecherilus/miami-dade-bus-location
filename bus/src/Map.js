@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import ReactMapGL, { Marker } from 'react-map-gl';
+import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import useSwr from 'swr';
 import './App.css'
 
@@ -17,18 +17,18 @@ function Map() {
         zoom: 11,
     });
 
-     /** set state */
+    /** set state */
     const [busData, setBusData] = useState([]);
+    const [selectedBus, setSelectedBus] = useState(null);
 
-     /** fetch data from Miami Transit API and update state */
+    /** fetch data from Miami Transit API and update state */
     const { data, error } = useSwr(`http://miami-transit-api.herokuapp.com/api/Buses.json`,
         (...args) => fetch(...args)
             .then(res => res.json()));
-            
+
     useEffect(() => {
         if (data) setBusData(data.RecordSet.Record);
     }, [data]);
-
 
     /** add zoom and movement functionality to map */
     const mapRef = useRef();
@@ -54,12 +54,31 @@ function Map() {
                             longitude={parseFloat(bus.Longitude)}
                             key={idx}
                         >
-                            <button>
+                            <button onClick={e => {
+                                e.preventDefault();
+                                setSelectedBus(bus);
+                            }}>
                                 <img src='/bus-svg.html' alt='bus' />
                             </button>
                         </Marker>
                     );
                 })}
+
+                {/* display popups */}
+                {selectedBus ? (
+                    <Popup className='popup'
+                        latitude={parseFloat(selectedBus.Latitude)}
+                        longitude={parseFloat(selectedBus.Longitude)}
+                        onClose={() => {
+                            setSelectedBus(null);
+                        }}>
+                        <div>
+                            <h5>{selectedBus.TripHeadsign}</h5>
+                            <p><strong>{selectedBus.ServiceDirection}</strong></p>
+                        </div>
+                    </Popup>
+                ) : null}
+
             </ReactMapGL>
         </div>
     );
