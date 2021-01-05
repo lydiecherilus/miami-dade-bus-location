@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Miami Dade Bus Real Time Locations</h1>
+      <h1>Miami Dade Bus Real-Time Locations</h1>
       <Time />
       <Map />
     </div>
