@@ -1,16 +1,22 @@
+* {box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .App {
+  position: relative;
   text-align: center;
   background-color: rgb(234, 234, 241);
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  background-color: #282c34;
   color: rgb(20, 20, 228);
 }
 
@@ -34,12 +40,12 @@ img {
 }
 
 .popup h5 {
-  display:block;
+  display: block;
   text-align: center;
-  color:hsl(121, 93%, 27%);
   font-size: 12px;
   margin: 0;
   padding: -1%;
+  color:hsl(121, 93%, 27%);
  
 }
 .popup p {
@@ -53,4 +59,85 @@ img {
   position: absolute;
   text-align: left;
   margin: auto;
+}
+
+
+@media only screen and (max-width: 600px){
+  h1 {
+    color: rgb(41, 104, 197);
+    font-size: 14px;
+  }
+
+  h1:hover {
+    color: rgb(19, 48, 90);
+  }
+
+  .time {
+    color: rgb(102, 194, 78);
+    font-size: 11px;
+  }
+
+
+  .popup {
+    width: 90px;
+    padding: 0;
+  }
+  
+  .popup h5 {
+    display:block;
+    text-align: center;
+    color:hsl(121, 93%, 27%);
+    font-size: 10px;
+    margin: 0;
+    padding: -1%;
+   
+  }
+  .popup p {
+    display: block;
+    font-size: 8px;
+    margin: 0%;
+    padding: -1%;
+  }
+
+  .mapboxgl-ctrl-geocoder {
+    font-size: 12px;
+    line-height: 12px;
+    width: 60%;
+    min-width: 140px;
+    border-radius: 2px;
+  }
+
+  .mapboxgl-ctrl-geocoder--input {
+    width: 100%;
+    height: 30px;
+    padding: 3px 20px;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon-search {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--pin-right{
+    position: absolute;
+    width: 50%;
+    line-height: 12px;
+    border-radius: 2px;
+  }
+    
+  .mapboxgl-ctrl-geocoder.mapboxgl-ctrl-geocoder--collapsed{
+    width: 26px;
+    min-width: 26px;
+  }
+
+  .mapboxgl-ctrl-geocoder--icon.mapboxgl-ctrl-geocoder--icon-close{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    display: none;
+  }
+
 }

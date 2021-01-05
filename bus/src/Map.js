@@ -16,7 +16,7 @@ function Map() {
         height: '100vh',
         latitude: 25.599349,
         longitude: -80.34819,
-        zoom: 11,
+        zoom: 13,
     });
 
     /** set state */

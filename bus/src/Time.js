@@ -11,7 +11,7 @@ class Time extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='time'>
                 <h3>Current Local Time</h3>
                 <h3>{this.state.date.toLocaleTimeString()}</h3>
                 {this.interval()}
