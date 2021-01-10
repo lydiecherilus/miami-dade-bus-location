@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/miami-dade-bus-location/static/css/main.56695fc4.chunk.css",
+    "main.js": "/miami-dade-bus-location/static/js/main.f73da384.chunk.js",
+    "main.js.map": "/miami-dade-bus-location/static/js/main.f73da384.chunk.js.map",
+    "runtime-main.js": "/miami-dade-bus-location/static/js/runtime-main.e4cfb4af.js",
+    "runtime-main.js.map": "/miami-dade-bus-location/static/js/runtime-main.e4cfb4af.js.map",
+    "static/css/2.0b28f303.chunk.css": "/miami-dade-bus-location/static/css/2.0b28f303.chunk.css",
+    "static/js/2.6addc7c7.chunk.js": "/miami-dade-bus-location/static/js/2.6addc7c7.chunk.js",
+    "static/js/2.6addc7c7.chunk.js.map": "/miami-dade-bus-location/static/js/2.6addc7c7.chunk.js.map",
+    "static/js/3.53840a16.chunk.js": "/miami-dade-bus-location/static/js/3.53840a16.chunk.js",
+    "static/js/3.53840a16.chunk.js.map": "/miami-dade-bus-location/static/js/3.53840a16.chunk.js.map",
+    "index.html": "/miami-dade-bus-location/index.html",
+    "static/css/2.0b28f303.chunk.css.map": "/miami-dade-bus-location/static/css/2.0b28f303.chunk.css.map",
+    "static/css/main.56695fc4.chunk.css.map": "/miami-dade-bus-location/static/css/main.56695fc4.chunk.css.map",
+    "static/js/2.6addc7c7.chunk.js.LICENSE.txt": "/miami-dade-bus-location/static/js/2.6addc7c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4cfb4af.js",
+    "static/css/2.0b28f303.chunk.css",
+    "static/js/2.6addc7c7.chunk.js",
+    "static/css/main.56695fc4.chunk.css",
+    "static/js/main.f73da384.chunk.js"
+  ]
+}
