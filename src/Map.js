@@ -23,7 +23,7 @@ function Map() {
     const [selectedBus, setSelectedBus] = useState(null);
 
     /** fetch data from Miami Transit API and update state */
-    const { data, error } = useSwr(`http://miami-transit-api.herokuapp.com/api/Buses.json`,
+    const { data } = useSwr(`http://miami-transit-api.herokuapp.com/api/Buses.json`,
         (...args) => fetch(...args)
             .then(res => res.json()));
 
