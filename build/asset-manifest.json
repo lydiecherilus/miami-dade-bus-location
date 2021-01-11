@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/miami-bus-location/static/css/main.c93bd4cb.chunk.css",
+    "main.js": "/miami-bus-location/static/js/main.ab57bb5f.chunk.js",
+    "main.js.map": "/miami-bus-location/static/js/main.ab57bb5f.chunk.js.map",
+    "runtime-main.js": "/miami-bus-location/static/js/runtime-main.272a4533.js",
+    "runtime-main.js.map": "/miami-bus-location/static/js/runtime-main.272a4533.js.map",
+    "static/js/2.be42b83f.chunk.js": "/miami-bus-location/static/js/2.be42b83f.chunk.js",
+    "static/js/2.be42b83f.chunk.js.map": "/miami-bus-location/static/js/2.be42b83f.chunk.js.map",
+    "static/js/3.5b58b700.chunk.js": "/miami-bus-location/static/js/3.5b58b700.chunk.js",
+    "static/js/3.5b58b700.chunk.js.map": "/miami-bus-location/static/js/3.5b58b700.chunk.js.map",
+    "index.html": "/miami-bus-location/index.html",
+    "static/css/main.c93bd4cb.chunk.css.map": "/miami-bus-location/static/css/main.c93bd4cb.chunk.css.map",
+    "static/js/2.be42b83f.chunk.js.LICENSE.txt": "/miami-bus-location/static/js/2.be42b83f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.272a4533.js",
+    "static/js/2.be42b83f.chunk.js",
+    "static/css/main.c93bd4cb.chunk.css",
+    "static/js/main.ab57bb5f.chunk.js"
+  ]
+}
