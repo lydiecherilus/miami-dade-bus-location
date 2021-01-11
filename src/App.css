@@ -77,7 +77,6 @@ img {
     font-size: 11px;
   }
 
-
   .popup {
     width: 90px;
     padding: 0;
@@ -128,6 +127,12 @@ img {
     border-radius: 2px;
   }
     
+  .mapboxgl-ctrl-top-right{
+    text-align: center;
+    width: 40px;
+    min-width: 40px;
+  }
+
   .mapboxgl-ctrl-geocoder.mapboxgl-ctrl-geocoder--collapsed{
     width: 26px;
     min-width: 26px;

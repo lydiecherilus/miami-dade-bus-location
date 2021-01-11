@@ -2,11 +2,10 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ReactMapGL, { Marker, Popup, NavigationControl } from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 import useSwr from 'swr';
+import busImage from './bus.png'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import './App.css'
-
-
-ReactMapGL.accessToken = process.env.REACT_APP_MAPBOX_TOKEN
 
 function Map() {
 
@@ -56,7 +55,7 @@ function Map() {
             <ReactMapGL
                 ref={mapRef}
                 {...viewport}
-                mapboxApiAccessToken={ReactMapGL.accessToken}
+                mapboxApiAccessToken="pk.eyJ1IjoibHlkaWVjaGVyaWx1cyIsImEiOiJja2gxMnEyOTcwYmVsMnJscXc4bnk0bXh3In0.YY_RlS5y_fAxP0ir_MPuzg"
                 onViewportChange={handleViewportChange}
                 mapStyle='mapbox://styles/mapbox/streets-v11'
             >
@@ -72,7 +71,7 @@ function Map() {
                                 e.preventDefault();
                                 setSelectedBus(bus);
                             }}>
-                                <img src='/bus-svg.html' alt='bus' />
+                                <img src={busImage} alt='bus' />
                             </button>
                         </Marker>
                     );
@@ -96,7 +95,7 @@ function Map() {
                 {/* add geocoder */}
                 <Geocoder
                     mapRef={mapRef}
-                    mapboxApiAccessToken={ReactMapGL.accessToken}
+                    mapboxApiAccessToken="pk.eyJ1IjoibHlkaWVjaGVyaWx1cyIsImEiOiJja2gxMnEyOTcwYmVsMnJscXc4bnk0bXh3In0.YY_RlS5y_fAxP0ir_MPuzg"
                     onViewportChange={handleGeocoderViewportChange}
                     zoom={12}
                     trackProximity='true'
